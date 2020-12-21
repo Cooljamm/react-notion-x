@@ -40,11 +40,11 @@ var lazy_image_1 = require("./components/lazy-image");
 var context_1 = require("./context");
 var utils_1 = require("./utils");
 var text_1 = require("./components/text");
-var typeform_1 = require("./components/typeform");
 // load heavier components asynchronously
 var Code = dynamic_1["default"](function () { return Promise.resolve().then(function () { return __importStar(require('./components/code')); }); });
 var Collection = dynamic_1["default"](function () { return Promise.resolve().then(function () { return __importStar(require('./components/collection')); }); });
 var CollectionRow = dynamic_1["default"](function () { return Promise.resolve().then(function () { return __importStar(require('./components/collection-row')); }); });
+var Typeform = dynamic_1["default"](function () { return Promise.resolve().then(function () { return __importStar(require('./components/typeform')); }); }, { ssr: false });
 exports.Block = function (props) {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3;
     var _4 = context_1.useNotionContext(), components = _4.components, fullPage = _4.fullPage, darkMode = _4.darkMode, recordMap = _4.recordMap, mapPageUrl = _4.mapPageUrl, mapImageUrl = _4.mapImageUrl;
@@ -262,7 +262,7 @@ exports.Block = function (props) {
                 React.createElement("div", { className: utils_1.cs('notion-to-do-body', isChecked && "notion-to-do-checked") },
                     React.createElement(text_1.Text, { value: (_3 = block.properties) === null || _3 === void 0 ? void 0 : _3.title, block: block }))));
         case 'typeform':
-            return React.createElement(typeform_1.Typeform, { block: block });
+            return React.createElement(Typeform, { block: block });
         default:
             if (process.env.NODE_ENV !== 'production') {
                 console.log('Unsupported type ' + block.type, JSON.stringify(block, null, 2));

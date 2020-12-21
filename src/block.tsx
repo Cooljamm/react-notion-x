@@ -24,12 +24,12 @@ import {
   uuidToId
 } from './utils'
 import { Text } from './components/text'
-import { Typeform } from './components/typeform'
 
 // load heavier components asynchronously
 const Code = dynamic(() => import('./components/code'))
 const Collection = dynamic(() => import('./components/collection'))
 const CollectionRow = dynamic(() => import('./components/collection-row'))
+const Typeform = dynamic(() => import('./components/typeform'), { ssr: false })
 
 interface BlockProps {
   block: types.Block | { type: 'typeform' }

@@ -15,11 +15,11 @@ import { LazyImage } from './components/lazy-image';
 import { useNotionContext } from './context';
 import { cs, getTextContent, getListNumber, getPageTableOfContents, getBlockParentPage, uuidToId } from './utils';
 import { Text } from './components/text';
-import { Typeform } from './components/typeform';
 // load heavier components asynchronously
 var Code = dynamic(function () { return import('./components/code'); });
 var Collection = dynamic(function () { return import('./components/collection'); });
 var CollectionRow = dynamic(function () { return import('./components/collection-row'); });
+var Typeform = dynamic(function () { return import('./components/typeform'); }, { ssr: false });
 export var Block = function (props) {
     var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3;
     var _4 = useNotionContext(), components = _4.components, fullPage = _4.fullPage, darkMode = _4.darkMode, recordMap = _4.recordMap, mapPageUrl = _4.mapPageUrl, mapImageUrl = _4.mapImageUrl;

@@ -556,11 +556,6 @@
         "signature": "71e387b89d32249868df3e7484922d8888140ea9f07ebf0bc07afa42fa8742ed",
         "affectsGlobalScope": false
       },
-      "../../src/components/typeform.tsx": {
-        "version": "2c61d941d8c8c5ddeffe0e08e363b668e55f26009491e8c67989fa13c999230a",
-        "signature": "c731f86b5c964806b5e5707513b32f3a1746dcd9e791e7cfa2c1f271deab721f",
-        "affectsGlobalScope": false
-      },
       "../../src/components/code.tsx": {
         "version": "7566ac12fd886766731eb09261f79763b56c85d2a81cb3a81c6fd8317285ef8c",
         "signature": "a7e56df3ddbf47d65d7113e8852d3adc330689807c60c938f2fe46a71ab7ba09",
@@ -1426,8 +1421,13 @@
         "signature": "c1ff321deaa3467ec4bf0c64548856aae18f3fd5af8766f7f33d5f8c77b156e8",
         "affectsGlobalScope": false
       },
+      "../../src/components/typeform.tsx": {
+        "version": "8c525c7c1515f2f72f4406a8debc6a1ba0a3d2c37beccb2a09d279c4ebf9ee1a",
+        "signature": "302220fd0734411ed33088a8190de8ebe17f7fde6efed621121fc0b66de1de4b",
+        "affectsGlobalScope": false
+      },
       "../../src/block.tsx": {
-        "version": "fa56ee88362513e451fb533a8b81be437ed94f8290b766971752d86611537e46",
+        "version": "1cf67fa6620b572b9dbfd2ce51d8c6c40d54600880274b2d808fe92da6c81b4e",
         "signature": "f82b1d752cbc6d91a2d31992bccef009dd32ff1b649feda29d5de8d9d4aeb1d7",
         "affectsGlobalScope": false
       },
@@ -1775,6 +1775,7 @@
       "outDir": "./",
       "tsBuildInfoFile": "./index.tsbuildinfo",
       "jsx": 2,
+      "watch": true,
       "configFilePath": "../../tsconfig.cjs.json"
     },
     "referencedMap": {

@@ -1,4 +1,5 @@
 import * as React from 'react';
-export declare const Typeform: React.FC<{
+declare const Typeform: React.FC<{
     block: any;
 }>;
+export default Typeform;
